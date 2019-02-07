@@ -1,0 +1,15 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: bookstore-eureka-server
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: bookstore-config-server
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
