@@ -11,6 +11,6 @@ public class OrderController {
 
     @GetMapping
     public String welcome(){
-        return "welcome to Bookstore Goods Service";
+        return "welcome to Bookstore Order Service";
     }
 }
