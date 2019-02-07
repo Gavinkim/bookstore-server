@@ -1,0 +1,23 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: bookstore-turbine-server
+
+  #Config Server
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: bookstore-config-server
+
+#Eureka Client
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9091/eureka/
+
+#Turbine Server
+turbine:
+  appConfig: bookstore-order,bookstore-member,bookstore-goods
+  clusterNameExpression: new String("default")

@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.bookstore.eureka</groupId>
-    <artifactId>bseureka</artifactId>
+    <artifactId>eureka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>bseureka</name>
+    <name>eureka</name>
     <description>bookstore eureka project for Spring Boot</description>
 
     <properties>
