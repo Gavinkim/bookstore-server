@@ -1,0 +1,17 @@
+
+server:
+  port: 8888
+
+spring:
+  application:
+    name: bookstore-config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Gavinkim/bookstore-config.git
+          search-paths:
+            - goods/goods
+            - member/member
+            - order/order
